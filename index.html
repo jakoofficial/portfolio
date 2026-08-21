@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - WIP</title>
+    <link rel="stylesheet" href="Stylesheets/style.css" />
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+  </head>
+
+  <body>
+    <!-- Content is loaded from other pages -->
+    <div id="navigation">
+      <a id="navActionButton">
+        <span id="navOpened"><</span>
+        <span id="navClosed">></span>
+      </a>
+      <a href="#welcome">Welcome</a>
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+    </div>
+
+    <div id="container"></div>
+  </body>
+  <script>
+    // let navOpen = true;
+    const navActionButton = document.getElementById("navActionButton");
+    const navigation = document.getElementById("navigation");
+
+    navActionButton.addEventListener("click", () => {
+      navigation.classList.toggle("nav_close");
+    });
+
+    const pagesArr = [
+      "Pages/welcome.html",
+      "Pages/about.html",
+      "Pages/projects.html",
+    ];
+    $(document).ready(function () {
+      let i = 0;
+      while (i < pagesArr.length) {
+        $("#container").append($("<section>").load(pagesArr[i]));
+        i++;
+      }
+    });
+  </script>
+</html>
