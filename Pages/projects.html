@@ -1,3 +1,51 @@
 <div id="projects" class="content">
-    <p>Projects</p>
+    <div id="container">
+        <h1>My projects</h1>
+        <div id="project_list">
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </div>
+    </div>
 </div>
+
+<style>
+    #projects{
+        #container{
+            width: 90vw;
+            height: 95vh;
+            align-content: center;
+
+            h1{
+                font-size: 34px;
+                display: block;
+                width:95%;
+                margin: auto;
+                transform: translateY(-15px);
+            }
+
+            #project_list{
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                overflow-y: scroll;
+                height: 80%;
+                width: 95%;
+                padding: 5px 10px;
+                justify-content: center;
+            }
+            .project{
+                border-right: 1px solid black;
+                background-color: rgba(138, 167, 184, 0.322);
+                width:15%;
+                height:50%;
+                margin:10px 10px;
+                border-radius: 15px;
+                box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.479);
+            }
+        }
+    }
+</style>
