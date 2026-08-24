@@ -1,3 +1,59 @@
 <div id="about" class="content">
-    <p>hellow</p>
+    <div id="container">
+        <div>
+            <div id="imgDiv">
+                <img src="../Images/Me.png" alt="Picture of Jacob">
+            </div>
+            <p>
+                Jacob Ø. Andersen <br>
+                Birthdate: 25-12-1996 (29) <br>
+                Living in: Denmark <br>
+                Occupation: Student <br>
+                Field: Programming
+            </p>
+        </div>
+        <div>
+            <h1>About me</h1>
+        </div>
+    </div>
 </div>
+
+<style>
+    #about{
+        #container{
+            display: flex;
+            width:75%;
+            height: 75vh;
+            position:relative;
+            left: 50vw;
+            transform: translateX(-70%) translateY(10%);
+            
+            div:nth-child(1) {
+                width:25%;
+                justify-content: center;
+                
+                &:nth-child(2){
+                    width: 75%;
+                }
+            }
+            #imgDiv{
+                display: grid;
+                place-items: center;
+                width:100%;
+                height:200px;
+            }
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        img{
+            width:200px;
+            max-height: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    }
+</style>
