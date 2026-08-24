@@ -10,6 +10,7 @@ const pagesArr = [
   "Pages/welcome.html",
   "Pages/about.html",
   "Pages/projects.html",
+  "Pages/contact.html",
 ];
 $(document).ready(function () {
   let i = 0;

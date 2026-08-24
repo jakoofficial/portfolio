@@ -22,7 +22,7 @@ body {
 
 #navigation {
   position: fixed;
-  top: 35vh;
+  top: 45vh;
   width: 150px;
   transform: translateY(-50%);
   overflow: visible;
@@ -74,6 +74,7 @@ body {
     border-bottom: 1px solid rgba(75, 75, 75, 0.541);
     opacity: 1;
     transition: opacity 0.3s ease;
+    overflow: hidden;
 
     #navigation.nav_close & {
       opacity: 0;
