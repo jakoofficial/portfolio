@@ -2,6 +2,17 @@
     <div id="container">
         <h1>My projects</h1>
         <div id="project_list">
+            <div class="project">
+                <a href="#projects">
+                    <!-- <img src="../Images/BoldByte_Raw.svg" alt=""> -->
+                    <p class="title">Title</p>
+                    <p class="info">Project Info</p>
+                </a>
+            </div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
@@ -40,11 +51,56 @@
             .project{
                 border-right: 1px solid black;
                 background-color: rgba(138, 167, 184, 0.322);
-                width:15%;
+                width: 15%;
                 height:50%;
                 margin:10px 10px;
                 border-radius: 15px;
                 box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.479);
+                min-width: 250px;
+                &:first-of-type{
+                    width: 30%;
+                }
+
+                a{
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-decoration: none;
+                    border-radius: 15px;
+                    height:100%;
+                    width:100%;
+                    background-image: url("../Images/icon.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-blend-mode: normal;
+                    background-position: center;
+
+                    transition: background-color 0.25s, background-blend-mode 0.5s;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.685);
+                        background-blend-mode: multiply;
+                        .title{opacity: 100%;}
+                        .info{opacity: 100%;}
+                    }
+                    
+                    .title{
+                        width:100%;
+                        height: 10%;
+                        font-size: clamp(12px, 5vw, 25px);
+                        margin:10px 0;
+                        opacity:  0%;
+                        transition: opacity 0.25s;
+                        text-align: center;
+                    }
+                    .info {
+                        width: 100%;
+                        margin: 0 10px;
+                        transition: opacity 0.25s;
+                        opacity:  0%;
+                        height: 80%;
+                        word-wrap: normal;
+                        overflow-y: hidden;
+                    }
+                }
             }
         }
     }
