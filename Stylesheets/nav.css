@@ -81,7 +81,8 @@
     position: fixed;
     bottom:env(safe-area-inset-bottom);
     bottom: 3vh;
-    left: 83vw;
+    right:env(safe-area-inset-right);
+    right: 5vw;
     z-index: 10000;
     #navMenu{
         display: flexbox;
