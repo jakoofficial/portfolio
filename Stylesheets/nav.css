@@ -79,8 +79,9 @@
 
   #navMobile{
     position: fixed;
-    top:88vh;
-    left: 85vw;
+    bottom:env(safe-area-inset-bottom);
+    bottom: 3vh;
+    left: 83vw;
     z-index: 10000;
     #navMenu{
         display: flexbox;
