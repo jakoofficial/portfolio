@@ -1,9 +1,16 @@
 // let navOpen = true;
 const navActionButton = document.getElementById("navActionButton");
 const navigation = document.getElementById("navigation");
+const mobileNavAction = document.getElementById("mobileNavAction");
+const navMenu = document.getElementById("navMenu");
 
 navActionButton.addEventListener("click", () => {
   navigation.classList.toggle("nav_close");
+});
+
+mobileNavAction.addEventListener("click", () => {
+  navMenu.classList.toggle("nav_close");
+
 });
 
 const pagesArr = [

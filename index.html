@@ -10,17 +10,17 @@
   </head>
 
   <body>
-    <!-- Content is loaded from other pages -->
+    <!-- Navigation for mobiles and smaller screens -->
     <div id="navMobile">
-      <a href=""></a>
-      <div id="navMenu">
+      <div id="navMenu" class="nav_close">
         <a href="#welcome">Welcome</a>
         <a href="#about">About me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact me</a>
       </div>
+      <a id="mobileNavAction"></a>
     </div>
-
+    <!-- Navigation for desktop and bigger screens -->
     <div id="navigation">
       <a id="navActionButton">
         <span id="navOpened"><</span>
@@ -31,7 +31,8 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact me</a>
     </div>
-
+    
+    <!-- Content is loaded from other pages -->
     <div id="container"></div>
   </body>
   <script src="JS/nav.js"></script>
