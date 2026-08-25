@@ -1,5 +1,5 @@
 <div id="welcome" class="content">
-    <div>
+    <div id="container">
         <h1>Welcome!</h1>
         <p> My name is Jacob Ø. Andersen</p>
     </div>
@@ -7,21 +7,17 @@
 
 <style>
     #welcome{
-        div{
-            width: 50%;
-            height:100%;
-            position: relative;
-            top: 25vh;
-            left: 50vw;
-            transform: translateX(-50%) translateY(-50%);
-            text-align: center;
-        }
+        #container {
+        width: 85vw;
+        height: 25vh;
+        text-align: center;
+        transform: translateY(100%);
         h1{
             font-size: clamp(12px,10vw, 50px);
         }
         p {
             font-size: clamp(10px, 5vw, 20px);
         }
-        
     }
+}
 </style>
