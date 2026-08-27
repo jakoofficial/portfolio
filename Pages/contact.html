@@ -1,23 +1,28 @@
 <div id="contact" class="content">
   <div id="container" class="box">
     <p>Contact me?</p>
-    <div class="box">
+    <div class="Links box">
       <a href="https://github.com/jakoofficial" target="_blank">
         <img src="../Images/Icons/Github.svg" alt="Github" />
         <p>Want to see what I have been working on?</p>
+        <br />
         <p>Check my Github where my projects are located.</p>
       </a>
     </div>
-    <div class="box">
-      <a href="https://www.linkedin.com/in/jacob-ornskov-andersen/?locale=en" target="_blank">
+    <div class="Links box">
+      <a
+        href="https://www.linkedin.com/in/jacob-ornskov-andersen/?locale=en"
+        target="_blank"
+      >
         <img src="../Images/Icons/Linkedin.svg" alt="Linkedin" />
         <p>Click here to visit my Linkedin page.</p>
       </a>
     </div>
-    <div class="box">
+    <div class="Links box">
       <a href="mailto:jacobvoandersen@gmail.com?subject=Topic%20here">
         <img src="../Images/Icons/Email.svg" alt="Email" />
         <p>Want a more direct way to contact me?</p>
+        <br />
         <p>Then click here to send me an E-mail.</p>
       </a>
     </div>
@@ -26,44 +31,83 @@
 
 <style>
   #contact {
-    #container {
-      width: 50vw;
-      height: 50vh;
-      margin: auto;
-      display: flexbox;
-      flex-wrap: wrap;
-      transform: translateY(30%);
-      padding: 5px 15px;
-    }
-    p {
-      &:first-of-type {
-        width: 100%;
-        height: 10%;
-        padding-top: 1%;
+    @media (min-width: 600px) {
+      #container {
+        width: 50vw;
+        height: 50vh;
+        margin: auto;
         display: flex;
-        font-size: 30px;
+        flex-wrap: wrap;
+        transform: translateY(30%);
+        padding: 5px 15px;
+      }
+      p {
+        &:first-of-type {
+          width: 100%;
+          height: 10%;
+          padding-top: 1%;
+          display: flex;
+          font-size: 30px;
+        }
+      }
+      .Links {
+        margin: auto;
+        display: flex;
+        width: 30%;
+        height: 80%;
+
+        a {
+          text-decoration: none;
+          width: 100%;
+          padding: 0 15px;
+          overflow-y: scroll;
+          img {
+            display: block;
+            width: 100%;
+            height: 30%;
+            margin: auto;
+          }
+          p {
+            font-size: 20px;
+            min-height: 75px;
+          }
+        }
       }
     }
-    .box {
-      margin: auto;
-      display: flex;
-      width: 30%;
-      height: 80%;
-
-      a {
-        text-decoration: none;
-        width: 100%;
-        padding:0 15px;
-        img {
-          display: block;
-          width: 100%;
-          height: 30%;
-          margin: auto;
-          padding: 25px 0;
-        }
+    @media (max-width: 600px) {
+      #container {
+        width: 50vw;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translateY(30%);
+        padding: 5px 15px;
         p{
-          font-size: 20px;
-          min-height:75px;
+          &:first-of-type {
+          width: 100%;
+          height: 10%;
+          padding-top: 1%;
+          display: flex;
+          font-size: 30px;
+        }
+        }
+        .Links {
+          width: 30%;
+          display: flex;
+          margin: auto;
+          height: 50%;
+          a {
+            text-decoration: none;
+            img {
+              display: block;
+              margin: auto;
+              height: 100%;
+              width: 90%;
+            }
+            p {
+              visibility: collapse;
+            }
+          }
         }
       }
     }
