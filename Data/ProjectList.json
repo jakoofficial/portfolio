@@ -1,22 +1,42 @@
 [
     {
-        "Title": "asdsadsa",
+        "Title": "Stellar Dig",
         "Desc": "This is a description",
-        "Link": "#projects",
-        "Thumbnail": "./Images/icon.svg",
-        "LatestUpdate": "",
+        "Link": "https://github.com/jakoofficial/DigNew",
+        "Thumbnail": "./Images/Projects/StellarDigLogo.svg",
+        "LatestUpdate": "Aug 19 2026",
         "Tags": [
-            "tag1"
+            "Game", "Godot", "Web"
         ]
     },
     {
-        "Title": "asdsadadadadsadsadad",
+        "Title": "Spring Cleaning (Game)",
         "Desc": "This is a description",
-        "Link": "#projects",
-        "Thumbnail": "./Images/BoldByte_Raw.svg",
-        "LatestUpdate": "",
+        "Link": "https://pumpkin-dev.itch.io/spring-cleaning",
+        "Thumbnail": "./Images/Projects/Temp.png",
+        "LatestUpdate": "May 19 2025",
         "Tags": [
-            "tag2"
+            "Game", "Godot", "Web"
+        ]
+    },
+    {
+        "Title": "Tanks Web (Game)",
+        "Desc": "This is a description",
+        "Link": "https://github.com/jakoofficial/TanksWeb",
+        "Thumbnail": "./Images/Projects/Temp.png",
+        "LatestUpdate": "Aug 6 2024",
+        "Tags": [
+            "Game", "Godot", "Web"
+        ]
+    },
+    {
+        "Title": "Pachink (Game)",
+        "Desc": "This is a description",
+        "Link": "https://github.com/jakoofficial/Pachink",
+        "Thumbnail": "./Images/Projects/Temp.png",
+        "LatestUpdate": "Sep 23 2024",
+        "Tags": [
+            "Game", "Godot", "Web"
         ]
     }
 ]
