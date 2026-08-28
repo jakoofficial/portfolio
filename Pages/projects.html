@@ -8,8 +8,9 @@
       var thumbnail = $('<img src="'+data[idx].Thumbnail+'" alt="" />');
       var title = $('<p class="title">'+data[idx].Title+'</p>');
       var info = $('<p class="info">'+data[idx].Desc+'</p>');
+      var DateUpdated = $('<p class="info">'+data[idx].LatestUpdate+'</p>');
 
-      $("#project_list").append(proj.append(link.append(thumbnail, title, info)));
+      $("#project_list").append(proj.append(link.append(thumbnail, title, info, DateUpdated)));
       idx++;
     };
   });
@@ -134,7 +135,7 @@
             margin: 0 10px;
             transition: opacity 0.25s;
             opacity: 0%;
-            height: 80%;
+            height: 75%;
             word-wrap: normal;
             z-index: 1;
             overflow-y: hidden;

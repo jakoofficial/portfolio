@@ -1,7 +1,7 @@
 [
     {
         "Title": "Stellar Dig",
-        "Desc": "This is a description",
+        "Desc": "Stellar Dig, is the lastest game I've made in the Godot Game engine.<br><br>The goal of the game is to dig and upgrade.",
         "Link": "https://github.com/jakoofficial/DigNew",
         "Thumbnail": "./Images/Projects/StellarDigLogo.svg",
         "LatestUpdate": "Aug 19 2026",
@@ -11,7 +11,7 @@
     },
     {
         "Title": "Spring Cleaning (Game)",
-        "Desc": "This is a description",
+        "Desc": "Made for a game jam in 2025, with my partner.<br><br>We created this game using the Godot game engine, with the goal of cleaning the park so it's ready for spring.",
         "Link": "https://pumpkin-dev.itch.io/spring-cleaning",
         "Thumbnail": "./Images/Projects/Temp.png",
         "LatestUpdate": "May 19 2025",
@@ -20,8 +20,8 @@
         ]
     },
     {
-        "Title": "Tanks Web (Game)",
-        "Desc": "This is a description",
+        "Title": "Tanks Web",
+        "Desc": "This project was made as a small experiment with Godot's Multiplayer feature.<br><br>The game is simple and allows multiple people to play the classic tank game against others.",
         "Link": "https://github.com/jakoofficial/TanksWeb",
         "Thumbnail": "./Images/Projects/Temp.png",
         "LatestUpdate": "Aug 6 2024",
@@ -30,8 +30,8 @@
         ]
     },
     {
-        "Title": "Pachink (Game)",
-        "Desc": "This is a description",
+        "Title": "Pachink",
+        "Desc": "Based on the Japanese Pachinko. This game was made as a project for my colleges Friday bar, for students to win prizes.",
         "Link": "https://github.com/jakoofficial/Pachink",
         "Thumbnail": "./Images/Projects/Temp.png",
         "LatestUpdate": "Sep 23 2024",
