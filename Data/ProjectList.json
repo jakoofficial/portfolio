@@ -1,7 +1,7 @@
 [
     {
         "Title": "Stellar Dig",
-        "Desc": "Stellar Dig, is the lastest game I've made in the Godot Game engine.<br><br>The goal of the game is to dig and upgrade.",
+        "Desc": "Stellar Dig, is the lastest game I've made in the Godot Game engine.<br><brThe goal of the game is to dig and upgrade.",
         "Link": "https://github.com/jakoofficial/DigNew",
         "Thumbnail": "./Images/Projects/StellarDigLogo.svg",
         "LatestUpdate": "Aug 19 2026",
@@ -36,7 +36,7 @@
         "Thumbnail": "./Images/Projects/Temp.png",
         "LatestUpdate": "Sep 23 2024",
         "Tags": [
-            "Game", "Godot", "Web"
+            "Game", "Godot"
         ]
     }
 ]

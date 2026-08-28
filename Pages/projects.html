@@ -1,18 +1,35 @@
 <script>
   $.get("../Data/ProjectList.json", function (data) {
     let idx = 0;
+    let tagList = [];
 
-    while(idx < data.length){
+    while (idx < data.length) {
       var proj = $('<div class="project">');
-      var link = $('<a href="'+data[idx].Link+'" target="_blank">',);
-      var thumbnail = $('<img src="'+data[idx].Thumbnail+'" alt="" />');
-      var title = $('<p class="title">'+data[idx].Title+'</p>');
-      var info = $('<p class="info">'+data[idx].Desc+'</p>');
-      var DateUpdated = $('<p class="info">'+data[idx].LatestUpdate+'</p>');
+      var link = $('<a href="' + data[idx].Link + '" target="_blank">');
+      var thumbnail = $('<img src="' + data[idx].Thumbnail + '" alt="" />');
+      var title = $('<p class="title">' + data[idx].Title + "</p>");
+      var info = $('<p class="info">' + data[idx].Desc + "</p>");
+      var DateUpdated = $('<p class="updated">' + data[idx].LatestUpdate + "</p>");
 
-      $("#project_list").append(proj.append(link.append(thumbnail, title, info, DateUpdated)));
+      //Getting the tags
+      for (let i = 0; i < data[idx].Tags.length; i++) {
+        if (!tagList.includes(data[idx].Tags[i])) {
+          tagList.push(data[idx].Tags[i])
+        }
+      }
+
+      $("#project_list").append(
+        proj.append(link.append(thumbnail, title, info, DateUpdated)),
+      );
       idx++;
-    };
+    }
+
+    var tagArea = document.getElementById("tag_list");
+    for(let i = 0; i < tagList.length; i++){
+      var tag = $('<a class="tag">'+ tagList[i]+'</a>');
+      $("#tag_list").append(tag)
+    }
+
   });
 </script>
 
@@ -20,8 +37,6 @@
   <div id="container">
     <h1>My projects</h1>
     <div id="tag_list">
-      <a class="tag" href="#projects">tag1</a>
-      <a class="tag" href="#projects">tasadad adg2</a>
     </div>
     <div id="project_list"></div>
   </div>
@@ -52,12 +67,14 @@
           background-color: rgb(65, 23, 23);
           border-radius: 10px;
           min-width: 75px;
+          margin-left:5px;
           padding: 0 10px;
           height: 35px;
           text-align: center;
           align-content: center;
           border: none;
           text-decoration: none;
+          cursor: pointer;
         }
       }
 
@@ -117,6 +134,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
           }
           .title {
             width: 90%;
@@ -139,6 +157,10 @@
             word-wrap: normal;
             z-index: 1;
             overflow-y: hidden;
+          }
+          .updated{
+            width:100%;
+            padding-left:15px;
           }
         }
       }
